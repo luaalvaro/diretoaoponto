@@ -1,4 +1,4 @@
-import { Button, Flex, List, ListIcon, ListItem, Text } from '@chakra-ui/react'
+import { Button, Flex, List, ListIcon, ListItem, Text, Link } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { FcCheckmark } from 'react-icons/fc'
@@ -8,11 +8,6 @@ const Home = () => {
     <>
       <Head>
         <title>Direto ao ponto - Programação web com Next.JS + Supabase</title>
-
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <Flex
         background="linear-gradient(180deg, #363636 0%, rgba(0, 0, 0, 0.9) 100%)"
@@ -46,7 +41,7 @@ const Home = () => {
         </Flex>
         <Flex
           width="100%"
-          maxWidth="1200px"
+          maxWidth="800px"
           px="25px"
           mx="auto"
           direction="column"
@@ -86,16 +81,24 @@ const Home = () => {
             />
           </Flex>
 
-          <Button
+          <Link
+            href="https://sun.eduzz.com/1288359"
             background="#3EF0B3"
             color="#000"
             height="44px"
             fontSize="14px"
             fontWeight={600}
             boxShadow="2px 3px 0 #363636"
+            borderRadius="8px"
+            textAlign="center"
+
+            _hover={{
+              background: '#2FC893'
+            }}
           >
             GARANTIR MEU ACESSO<br /> DIRETO AO PONTO!
-          </Button>
+          </Link>
+
           <Text
             fontSize="12px"
             color="#fff"
@@ -175,21 +178,28 @@ const Home = () => {
             mt="10px"
             color="#fff"
             textAlign="justify"
+            mb="20px"
           >
             Serão 11 aulas onde vamos passar por todos os programas e instalações necessários para acompanhar a criação da aplicação.
           </Text>
 
-          <Button
-            mt="30px"
+          <Link
+            href="https://sun.eduzz.com/1288359"
             background="#3EF0B3"
             color="#000"
             height="44px"
             fontSize="14px"
             fontWeight={600}
             boxShadow="2px 3px 0 #363636"
+            borderRadius="8px"
+            textAlign="center"
+
+            _hover={{
+              background: '#2FC893'
+            }}
           >
             GARANTIR MEU ACESSO<br /> DIRETO AO PONTO!
-          </Button>
+          </Link>
           <Text
             fontSize="12px"
             color="#fff"
@@ -301,107 +311,119 @@ const Home = () => {
             E você ainda pode <strong>parcelar em 12x de 7,80 no cartão de crédito...</strong>
           </Text>
         </Flex>
-
         <Flex
-          my="30px"
-          direction={["column", "column", "row", "row", "row"]}
-          ml="25px"
-          gridGap="20px"
-        >
-          <Flex
-            gridGap="10px"
-            align="center"
-          >
-            <Image src="/seguro.svg" alt="Compra segura" width={35} height={40} />
-
-            <Text
-              fontSize="12px"
-              color="#318834"
-            >
-              COMPRA<br />
-              100% SEGURA
-            </Text>
-          </Flex>
-          <Flex
-            gridGap="10px"
-            align="center"
-          >
-            <Image src="/seguro2.svg" alt="Compra segura" width={30} height={40} />
-
-            <Text
-              fontSize="12px"
-              color="#318834"
-            >
-              PRIVACIDADE<br />
-              PROTEGIDA
-            </Text>
-          </Flex>
-          <Flex
-            gridGap="10px"
-            align="center"
-          >
-            <Image src="/seguro3.svg" alt="Compra segura" width={28} height={21} />
-
-            <Text
-              fontSize="12px"
-              color="#318834"
-            >
-              GODADDY ®<br />
-              VERIFICADO E PROTEGIDO
-            </Text>
-          </Flex>
-        </Flex>
-
-        <Flex
+          width="100%"
+          maxWidth="800px"
           px="25px"
+          mx="auto"
           direction="column"
         >
-          <Button
-            background="#3EF0B3"
-            color="#000"
-            height="44px"
-            fontSize="14px"
-            fontWeight={600}
-            boxShadow="2px 3px 0 #363636"
-          >
-            GARANTIR MEU ACESSO<br /> DIRETO AO PONTO!
-          </Button>
-          <Text
-            fontSize="12px"
-            color="#fff"
-            mt="5px"
-            textAlign="center"
-            opacity={0.8}
-          >
-            12x R$ 7,80 ou R$ 78,00 à vista
-          </Text>
-
-
           <Flex
             my="30px"
-            borderTop="1px solid rgba(255,255,255,0.1)"
+            direction={["column", "column", "row", "row", "row"]}
+            justify={["initial", "initial", "center", "center", "center"]}
+            gridGap="20px"
+          >
+            <Flex
+              gridGap="10px"
+              align="center"
+            >
+              <Image src="/seguro.svg" alt="Compra segura" width={35} height={40} />
+
+              <Text
+                fontSize="12px"
+                color="#318834"
+              >
+                COMPRA<br />
+                100% SEGURA
+              </Text>
+            </Flex>
+            <Flex
+              gridGap="10px"
+              align="center"
+            >
+              <Image src="/seguro2.svg" alt="Compra segura" width={30} height={40} />
+
+              <Text
+                fontSize="12px"
+                color="#318834"
+              >
+                PRIVACIDADE<br />
+                PROTEGIDA
+              </Text>
+            </Flex>
+            <Flex
+              gridGap="10px"
+              align="center"
+            >
+              <Image src="/seguro3.svg" alt="Compra segura" width={28} height={21} />
+
+              <Text
+                fontSize="12px"
+                color="#318834"
+              >
+                GODADDY ®<br />
+                VERIFICADO E PROTEGIDO
+              </Text>
+            </Flex>
+          </Flex>
+
+          <Flex
             direction="column"
           >
-            <Text
-              mt="10px"
-              color="#fff"
-              fontSize="12px"
-              textAlign="justify"
+            <Link
+              href="https://sun.eduzz.com/1288359"
+              background="#3EF0B3"
+              color="#000"
+              height="44px"
+              fontSize="14px"
+              fontWeight={600}
+              boxShadow="2px 3px 0 #363636"
+              borderRadius="8px"
+              textAlign="center"
+
+              _hover={{
+                background: '#2FC893'
+              }}
             >
-              Esta formação tem como objetivo construir do zero, uma aplicação para controle financeiro, utilizando o next js e supabase. O instrutor Luã Álvaro, mostra desde os programas necessários para seguir com o aprendizado, como o processo de instalação do next js e todas as etapas necessárias para a criação de uma aplicação web que se comunica com um banco de dados, e ao final do curso, ainda aprendemos a fazer o deploy da aplicação para os servidores da vercel!
+              GARANTIR MEU ACESSO<br /> DIRETO AO PONTO!
+            </Link>
+            <Text
+              fontSize="12px"
+              color="#fff"
+              mt="5px"
+              textAlign="center"
+              opacity={0.8}
+            >
+              12x R$ 7,80 ou R$ 78,00 à vista
             </Text>
 
-            <Text
-              mt="10px"
-              color="#fff"
-              fontSize="12px"
-              textAlign="justify"
+
+            <Flex
+              my="30px"
+              borderTop="1px solid rgba(255,255,255,0.1)"
+              direction="column"
             >
-              Os pagamentos são processados pela Eduzz Tecnologia LTDA. E mediante qualquer situação, você tem 07 Dias para pedir o reembolso 100% grátis.
-            </Text>
+              <Text
+                mt="10px"
+                color="#fff"
+                fontSize="12px"
+                textAlign="justify"
+              >
+                Esta formação tem como objetivo construir do zero, uma aplicação para controle financeiro, utilizando o next js e supabase. O instrutor Luã Álvaro, mostra desde os programas necessários para seguir com o aprendizado, como o processo de instalação do next js e todas as etapas necessárias para a criação de uma aplicação web que se comunica com um banco de dados, e ao final do curso, ainda aprendemos a fazer o deploy da aplicação para os servidores da vercel!
+              </Text>
+
+              <Text
+                mt="10px"
+                color="#fff"
+                fontSize="12px"
+                textAlign="justify"
+              >
+                Os pagamentos são processados pela Eduzz Tecnologia LTDA. E mediante qualquer situação, você tem 07 Dias para pedir o reembolso 100% grátis.
+              </Text>
+            </Flex>
           </Flex>
         </Flex>
-
       </Flex>
     </>
   )
