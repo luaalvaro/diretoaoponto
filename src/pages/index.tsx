@@ -33,10 +33,10 @@ const Home = () => {
           <Text
             textDecoration="line-through 2px"
           >
-            De R$ 299,00
+            De R$ 599,99
           </Text>
           <Text>
-            &nbsp;por 12x de R$ 7,80
+            &nbsp;por 12x de R$ 27,90
           </Text>
         </Flex>
         <Flex
@@ -106,7 +106,7 @@ const Home = () => {
             textAlign="center"
             opacity={0.8}
           >
-            12x R$ 7,80 ou R$ 78,00 à vista
+            12x R$ 27,90 ou R$ 279 à vista
           </Text>
 
           <Text
@@ -207,7 +207,7 @@ const Home = () => {
             textAlign="center"
             opacity={0.8}
           >
-            12x R$ 7,80 ou R$ 78,00 à vista
+            12x R$ 27,90 ou R$ 279 à vista
           </Text>
 
           <Flex
@@ -301,14 +301,14 @@ const Home = () => {
             color="#fff"
             textAlign="justify"
           >
-            E este treinamento que estava sendo vendido por 299,00 reais, vai estar disponível por apenas 78 reais
+            E este treinamento que estava sendo vendido por 599,99 reais, vai estar disponível por apenas 279 reais
           </Text>
           <Text
             mt="10px"
             color="#fff"
             textAlign="justify"
           >
-            E você ainda pode <strong>parcelar em 12x de 7,80 no cartão de crédito...</strong>
+            E você ainda pode <strong>parcelar em 12x de 27,90 no cartão de crédito...</strong>
           </Text>
         </Flex>
         <Flex
@@ -395,7 +395,7 @@ const Home = () => {
               textAlign="center"
               opacity={0.8}
             >
-              12x R$ 7,80 ou R$ 78,00 à vista
+              12x R$ 27,90 ou R$ 279 à vista
             </Text>
 
 
