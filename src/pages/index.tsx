@@ -72,7 +72,7 @@ const Home = () => {
           >
             <iframe
               width="100%"
-              height="199px"
+              height="400px"
               src="https://www.youtube.com/embed/jzKaA2nMLKc"
               title="YouTube video player"
               frameBorder="0"
